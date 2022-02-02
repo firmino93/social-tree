@@ -21,16 +21,16 @@ body {
 }
 
 .card {
-    height: 600px;
+    height: 700px;
     width: 400px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     text-align: center;
     padding: 8px;
 }
 
 .card img {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     padding: 3px;
     
     border-radius: 50%;
@@ -43,6 +43,40 @@ body {
     font-weight: 300px;
 }
 
-.card button {
-    display: inline-block;
+.card .btn-links {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.btn-links button {
+    padding: 10px 12px;
+    width: 324px;
+    border: 2px solid var(--purple);
+    border-radius: 4px;
+}
+
+.btn-links button a {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--purple);
+    background-color: var(--body-bg-color);
+}
+
+.card .social-icons {
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: none;
 }
